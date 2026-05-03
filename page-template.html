@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Page — David</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="navbar scrolled"> <!-- 'scrolled' force l'opacité dès le début -->
+        <a href="index.html" class="navbar__logo">
+            <span class="navbar__logo-dot"></span>
+            David
+        </a>
+        <ul class="navbar__links">
+            <li><a href="index.html#about" class="navbar__link">Accueil</a></li>
+            <li><a href="#" class="navbar__link active">Cette Page</a></li>
+        </ul>
+    </nav>
+
+    <!-- ============ CONTENU PRINCIPAL ============ -->
+    <main style="padding-top: 120px; min-height: 80vh;">
+        <div class="container">
+            <span class="section-label" data-aos="fade-right">Template</span>
+            <h1 class="section-title" data-aos="fade-up">Ceci est une page secondaire</h1>
+            
+            <div class="research-card" data-aos="fade-up" style="max-width: 800px; margin-top: 2rem;">
+                <h3 class="research-card__title">Pourquoi une page séparée ?</h3>
+                <p class="research-card__desc">
+                    Utilisez ce layout pour des articles longs, des galeries de projets détaillés ou des ressources téléchargeables. 
+                    Elle conserve tous les styles (Glassmorphism, AOS, KaTeX).
+                </p>
+                <div class="research-card__math">
+                    <span class="math-inline">\text{Exemple de rendu mathématique sur une nouvelle page : } \pi \approx 3.14159</span>
+                </div>
+            </div>
+
+            <a href="index.html" class="tag tag--primary" style="display: inline-block; margin-top: 2rem;">
+                ← Retour à l'accueil
+            </a>
+        </div>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <p>© 2026 David — Page secondaire</p>
+    </footer>
+
+    <!-- ============ SCRIPTS ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./js/hero-canvas.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/math-render.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
