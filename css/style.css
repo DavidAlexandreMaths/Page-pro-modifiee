@@ -597,6 +597,25 @@ section + section::before {
     font-size: 0.9rem;
     color: var(--color-text-muted);
 }
+.teaching__grid {
+    display: grid;
+    /* On garde vos deux colonnes */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem;
+    /* Indispensable : force les enfants à s'étirer sur toute la hauteur de la ligne */
+    align-items: stretch; 
+}
+
+.teaching-card {
+    display: flex;
+    flex-direction: column;
+    /* La carte prend 100% de la hauteur de la cellule de grille */
+    height: 100%; 
+    padding: 2rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
 img {
     max-width: 100%; /* L'image ne dépassera jamais la largeur de son conteneur */
     height: auto;    /* Garde les proportions d'origine */
