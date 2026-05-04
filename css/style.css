@@ -605,6 +605,23 @@ img {
     border-radius: 8px; /* Optionnel : arrondit légèrement les coins pour un look plus pro */
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    margin: 1rem 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* ========================================
    10. Publications Section
    ======================================== */
