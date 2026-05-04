@@ -570,9 +570,15 @@ section + section::before {
         grid-template-columns: 1fr;
     }
 }
-.teaching-card:hover {
-    border-color: var(--color-border-hover);
-    transform: translateY(-2px);
+.teaching-card {
+    display: flex;
+    flex-direction: column;
+    /* La carte prend 100% de la hauteur de la cellule de grille */
+    height: 100%; 
+    padding: 2rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
 }
 
 .teaching-card__icon {
@@ -606,16 +612,6 @@ section + section::before {
     align-items: stretch; 
 }
 
-.teaching-card {
-    display: flex;
-    flex-direction: column;
-    /* La carte prend 100% de la hauteur de la cellule de grille */
-    height: 100%; 
-    padding: 2rem;
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-}
 img {
     max-width: 100%; /* L'image ne dépassera jamais la largeur de son conteneur */
     height: auto;    /* Garde les proportions d'origine */
