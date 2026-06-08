@@ -3,7 +3,6 @@
  * Handles smooth scrolling, active link state via IntersectionObserver,
  * navbar scroll effect, and mobile menu toggle.
  */
-
 function initNavigation() {
     const navbar = document.querySelector('.navbar');
     const links = document.querySelectorAll('.navbar__link');
@@ -14,8 +13,12 @@ function initNavigation() {
     // --- Smooth scroll ---
     links.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
             const targetId = link.getAttribute('href');
+
+            // Si ce n'est pas une ancre, laisser le comportement normal du navigateur
+            if (!targetId.startsWith('#')) return;
+
+            e.preventDefault();
             const target = document.querySelector(targetId);
             if (target) {
                 target.scrollIntoView({ behavior: 'smooth' });
